@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/responsive.css">
+
+<!-- ChatKids -->
+<link rel="stylesheet" type="text/css" href="css/jquery.convform.css">
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.convform.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+
+</head>
+<body>
+<!-- ChatKids -->
+<div class="chat_icon">
+	<img src="https://media.giphy.com/media/0NcQxfkb5EDwp3Nt35/giphy.gif?cid=790b761135b811675a25cd3ca5cd17f628cbeb033d327eee&rid=giphy.gif&ct=s" alt="estrela">
+</div>
+
+<div class="chat_box">
+	<div class="my-conv-form-wrapper">
+		<form action="./php/enviar-email.php" method="post" class="hidden">
+
+      <div data-conv-fork="primeira pergunta">
+        <div data-conv-case="Sim">
+			<select data-conv-question="Olá, Gostaria de participar do marketplace?" name="Categoria">
+				<option value="Sim">Sim</option>
+			  </select>
+        </div>
+        <div data-conv-case="Não" data-conv-fork="Segunda pergunta">
+          <input type="text" name="name" data-conv-question="seu nome ?"> 
+        </div>
+      </div>
+
+	  <input id="name" type="text" name="name" data-conv-question="Qual seu nome ? ">
+
+	  <input type="text" data-conv-question="Olá {name}, Prazer em te conhecer, me chamo Star." data-no-answer="true">
+
+	  <input id="empresa" type="text" name="empresa" data-conv-question="Qual nome da sua empresa ?">  
+
+	  <input type="text" data-conv-question="Certo {name}, Vou precisar de mais algumas informações para continuarmos..." data-no-answer="true">
+
+	  <input id="email" type="text" name="email" data-conv-question="Qual seu email ?"> 
+
+	  <input id="cnpj" type="text" name="cnpj" data-conv-question="Qual cnpj ?"> 
+	  
+	  <input id="site" type="text" name="site" data-conv-question="Qual seu site ?">  
+
+	  <input id="telefone" type="text" name="telefone" data-conv-question="Seu telefone ?">  
+
+
+	   <select data-conv-question="Posso te ligar ? ou prefere whatsapp" name="Categoria">
+        <option value="Sim">Sim</option>
+        <option value="Não">whatsapp</option>
+      </select>
+
+	  <input type="text" data-conv-question="{name}, Caso precise este é meu telefone (62)991148307" data-no-answer="true">
+
+
+      <select data-conv-question="Estamos a poucos passos de nos tornarmos parceiros, Vou te ligar dentro de 1 hora para confirmar alguns dados, obrigado pela conversa :)">
+        <option onclick="" value="yes">Sair</option>
+      </select>
+
+  	</form>
+	  <div class="frase"><h1> Powered by<span class="cor"> MARKETPLACE KID'S BRASIL</h1>
+	</div>
+</div>
+<!-- ChatKids é isso :) -->
+
+
+<script>
+
+
+
+</script>
+
+
+</body>
+</html>
